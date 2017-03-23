@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="theme-color" content="#33474d">
+	<title>法语助手无限试用记录 | ercJuL&#39;s Blog</title>
+	<link rel="stylesheet" href="/css/style.css" />
+	
+      <link rel="alternate" href="/atom.xml" title="ercJuL&#39;s Blog" type="application/atom+xml">
+    
+</head>
+
+<body>
+
+	<header class="header">
+		<nav class="header__nav">
+			
+				<a href="/archives" class="header__link">Archive</a>
+			
+				<a href="/tags" class="header__link">Tags</a>
+			
+				<a href="/atom.xml" class="header__link">RSS</a>
+			
+		</nav>
+		<h1 class="header__title"><a href="/">ercJuL&#39;s Blog</a></h1>
+		<h2 class="header__subtitle">Be the best you can be</h2>
+	</header>
+
+	<main>
+		<article>
+	
+		<h1>法语助手无限试用记录</h1>
+	
+	<div class="article__infos">
+		<span class="article__date">2017-03-23</span><br />
+		
+			<span class="article__category">
+				<a class="article-category-link" href="/categories/软件逆向/">软件逆向</a>
+			</span><br />
+		
+		
+			<span class="article__tags">
+			  	<a class="article__tag-link" href="/tags/破解记录/">破解记录</a>
+			</span>
+		
+	</div>
+
+	
+
+	
+		<h2 id="使用软件"><a href="#使用软件" class="headerlink" title="使用软件"></a>使用软件</h2><blockquote>
+<p>软件本身未加密，也为发现自检或暗装</p>
+</blockquote>
+<pre><code>火绒剑
+</code></pre><h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><ol>
+<li>打开软件发现未注册且有试用次数限制，试用版可以使用全部功能<br><figure class="figure"><img src="/2017/03/23/法语助手无限试用记录/1.png" alt="关于"><figcaption class="figure__caption">关于</figcaption></figure></li>
+<li>打开火绒剑监控–只包含frhelper.exe，发现可以注册表项<br><figure class="figure"><img src="/2017/03/23/法语助手无限试用记录/2.png" alt="监控"><figcaption class="figure__caption">监控</figcaption></figure><br>3.转到注册表，显示0x31(49)，就是目标<br><figure class="figure"><img src="/2017/03/23/法语助手无限试用记录/3.png" alt="注册表"><figcaption class="figure__caption">注册表</figcaption></figure></li>
+<li>编辑注册表导入，<em>*</em>.reg<br><figure class="figure"><img src="/2017/03/23/法语助手无限试用记录/4.png" alt="cracked"><figcaption class="figure__caption">cracked</figcaption></figure><br> 期间测试，发现首位不能为1，判断次数的变量应该是有符号数，最大可以为0x7fffffff<br>5.重新打开软件<br><figure class="figure"><img src="/2017/03/23/法语助手无限试用记录/5.png" alt="成功"><figcaption class="figure__caption">成功</figcaption></figure></li>
+</ol>
+<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><pre><code>本身不难，软件未设暗装(暂未发现)，仅检测注册表项
+</code></pre>
+	
+
+	
+		<span class="different-posts"><a href="/2017/03/23/法语助手无限试用记录/" onclick="window.history.go(-1); return false;">⬅️ Go back </a></span>
+
+	
+
+</article>
+
+	</main>
+
+	<footer class="footer">
+	<div class="footer-content">
+		
+	      <div class="footer__element">
+	<p>Hi there, <br />welcome to my Blog glad you found it. Have a look around, will you?</p>
+</div>
+
+	    
+	      <div class="footer__element">
+	<h5>Check out</h5>
+	<ul class="footer-links">
+		<li class="footer-links__link"><a href="/archives">Archive</a></li>
+		
+		  <li class="footer-links__link"><a href="/atom.xml">RSS</a></li>
+	    
+		<li class="footer-links__link"><a href="/about">about page</a></li>
+		<li class="footer-links__link"><a href="/tags">Tags</a></li>
+		<li class="footer-links__link"><a href="/categories">Categories</a></li>
+	</ul>
+</div>
+
+	    
+
+		<div class="footer-credit">
+			<span>© 2017 Xu Hengshuo | Powered by <a href="https://hexo.io/">Hexo</a> | Theme <a href="https://github.com/HoverBaum/meilidu-hexo">MeiliDu</a></span>
+		</div>
+
+	</div>
+
+
+</footer>
+
+
+
+</body>
+
+</html>
