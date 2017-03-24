@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="theme-color" content="#33474d">
-	<title>法语助手无限试用记录 | ercJuL&#39;s Blog</title>
+	<title>mac版欧路词典破解记录 | ercJuL&#39;s Blog</title>
 	<link rel="stylesheet" href="/css/style.css" />
 	
       <link rel="alternate" href="/atom.xml" title="ercJuL&#39;s Blog" type="application/atom+xml">
@@ -31,10 +31,10 @@
 	<main>
 		<article>
 	
-		<h1>法语助手无限试用记录</h1>
+		<h1>mac版欧路词典破解记录</h1>
 	
 	<div class="article__infos">
-		<span class="article__date">2017-03-23</span><br />
+		<span class="article__date">2017-03-24</span><br />
 		
 			<span class="article__category">
 				<a class="article-category-link" href="/categories/软件逆向/">软件逆向</a>
@@ -50,21 +50,24 @@
 	
 
 	
-		<h2 id="使用软件"><a href="#使用软件" class="headerlink" title="使用软件"></a>使用软件</h2><blockquote>
-<p>软件本身未加密，也未发现自检或暗装</p>
+		<blockquote>
+<p>软件未加密，也无暗桩</p>
 </blockquote>
-<pre><code>火绒剑
+<h2 id="使用软件"><a href="#使用软件" class="headerlink" title="使用软件"></a>使用软件</h2><pre><code>hopper
 </code></pre><h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><ol>
-<li>打开软件发现未注册且有试用次数限制，试用版可以使用全部功能<br><figure class="figure"><img src="/2017/03/23/法语助手无限试用记录/1.png" alt="关于"><figcaption class="figure__caption">关于</figcaption></figure></li>
-<li>打开火绒剑监控–只包含frhelper.exe，发现可疑注册表项<br><figure class="figure"><img src="/2017/03/23/法语助手无限试用记录/2.png" alt="监控"><figcaption class="figure__caption">监控</figcaption></figure><br>3.转到注册表，显示0x31(49)，就是目标<br><figure class="figure"><img src="/2017/03/23/法语助手无限试用记录/3.png" alt="注册表"><figcaption class="figure__caption">注册表</figcaption></figure></li>
-<li>编辑注册表导入，<em>*</em>.reg<br><figure class="figure"><img src="/2017/03/23/法语助手无限试用记录/4.png" alt="cracked"><figcaption class="figure__caption">cracked</figcaption></figure><br> 期间测试，发现首位不能为1，判断次数的变量应该是有符号数，最大可以为0x7fffffff<br>5.重新打开软件<br><figure class="figure"><img src="/2017/03/23/法语助手无限试用记录/5.png" alt="成功"><figcaption class="figure__caption">成功</figcaption></figure></li>
+<li>载入程序分析，发现可疑函数<br><figure class="figure"><img src="/2017/03/24/mac版欧路词典破解记录/1.png" alt="函数查找"><figcaption class="figure__caption">函数查找</figcaption></figure></li>
+<li>在函数入口下断,debug，错误注册码发生跳转<br><figure class="figure"><img src="/2017/03/24/mac版欧路词典破解记录/2.png" alt="关键跳"><figcaption class="figure__caption">关键跳</figcaption></figure></li>
+<li>重启程序，在同一个位置改Z标志,发现注册成功<br><figure class="figure"><img src="/2017/03/24/mac版欧路词典破解记录/3.png" alt="跳转"><figcaption class="figure__caption">跳转</figcaption></figure></li>
+<li>nop此处跳转，保存文件<br><figure class="figure"><img src="/2017/03/24/mac版欧路词典破解记录/4.png" alt="nop,保存"><figcaption class="figure__caption">nop,保存</figcaption></figure></li>
+<li>复制爆破文件到应用目录完成破解<br><figure class="figure"><img src="/2017/03/24/mac版欧路词典破解记录/5.png" alt="完"><figcaption class="figure__caption">完</figcaption></figure><br><figure class="figure"><img src="/2017/03/24/mac版欧路词典破解记录/6.png" alt=""></figure></li>
 </ol>
-<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><pre><code>本身不难，软件未设暗装(暂未发现)，仅检测注册表项
+<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><pre><code>Mac破解与Win基本一致，Mac可能还更简单一点。
+虚拟机性能确实有点低，debug起来卡
 </code></pre>
 	
 
 	
-		<span class="different-posts"><a href="/2017/03/23/法语助手无限试用记录/" onclick="window.history.go(-1); return false;">⬅️ Go back </a></span>
+		<span class="different-posts"><a href="/2017/03/24/mac版欧路词典破解记录/" onclick="window.history.go(-1); return false;">⬅️ Go back </a></span>
 
 	
 
