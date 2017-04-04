@@ -5,11 +5,11 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ercJuL.github.io/"/>
-  <updated>2017-04-04T06:50:05.542Z</updated>
+  <updated>2017-04-04T07:03:35.929Z</updated>
   <id>http://ercJuL.github.io/</id>
   
   <author>
-    <name>Xu Hengshuo</name>
+    <name>ercJuL</name>
     
   </author>
   
@@ -20,36 +20,36 @@
     <link href="http://ercJuL.github.io/2017/04/04/%E6%96%B0%E4%B8%BB%E9%A2%98%E8%AE%B0%E5%BD%95/"/>
     <id>http://ercJuL.github.io/2017/04/04/新主题记录/</id>
     <published>2017-04-04T06:23:26.000Z</published>
-    <updated>2017-04-04T06:50:05.542Z</updated>
+    <updated>2017-04-04T07:03:35.929Z</updated>
     
     <content type="html"><![CDATA[<p>使用了新主题apollo,记录一下。<br><a id="more"></a></p>
 <p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=418603441&auto=1&height=66"></iframe></p>
 <h2 id="使用了新主题apollo"><a href="#使用了新主题apollo" class="headerlink" title="使用了新主题apollo"></a>使用了新主题<a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank" rel="external">apollo</a></h2><ol>
 <li><p>安装需要插件</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive</div></pre></td></tr></table></figure>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive</div></pre></td></tr></table></figure>
 </li>
 <li><p>下载主题</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> https://github.com/pinggod/hexo-theme-apollo.git themes/apollo</div></pre></td></tr></table></figure>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> https://github.com/pinggod/hexo-theme-apollo.git themes/apollo</div></pre></td></tr></table></figure>
 </li>
-<li><p>启用主题<br>修改 <code>_config.yml</code> 的 <code>theme</code> 配置项为 <code>apollo</code>:</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="attr">theme:</span> apollo</div><div class="line"></div><div class="line"><span class="comment"># 在归档页面显示所有文章</span></div><div class="line"><span class="comment"># 需要上面安装的 hexo-generator-archive 插件支持</span></div><div class="line"><span class="attr">archive_generator:</span></div><div class="line"><span class="attr">    per_page:</span> <span class="number">0</span> <span class="comment">#0表示不分页，</span></div><div class="line"><span class="attr">    yearly:</span> <span class="literal">false</span> <span class="comment">#生成年度档案</span></div><div class="line"><span class="attr">    monthly:</span> <span class="literal">false</span> <span class="comment">#生成每月存档</span></div><div class="line"><span class="attr">    daily:</span> <span class="literal">false</span></div></pre></td></tr></table></figure>
+<li><p>启用主题<br> 修改 <code>_config.yml</code> 的 <code>theme</code> 配置项为 <code>apollo</code>:</p>
+ <figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="attr">theme:</span> apollo</div><div class="line"></div><div class="line"><span class="comment"># 在归档页面显示所有文章</span></div><div class="line"><span class="comment"># 需要上面安装的 hexo-generator-archive 插件支持</span></div><div class="line"><span class="attr">archive_generator:</span></div><div class="line"><span class="attr">    per_page:</span> <span class="number">0</span> <span class="comment">#0表示不分页，</span></div><div class="line"><span class="attr">    yearly:</span> <span class="literal">false</span> <span class="comment">#生成年度档案</span></div><div class="line"><span class="attr">    monthly:</span> <span class="literal">false</span> <span class="comment">#生成每月存档</span></div><div class="line"><span class="attr">    daily:</span> <span class="literal">false</span></div></pre></td></tr></table></figure>
 </li>
 <li><p>更新</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> themes/apollo </div><div class="line">git pull</div></pre></td></tr></table></figure>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> themes/apollo </div><div class="line">git pull</div></pre></td></tr></table></figure>
 </li>
 </ol>
 <h2 id="评论"><a href="#评论" class="headerlink" title="评论"></a>评论</h2><p>我是想打开的，然后发现多说要关了，用disqus国内效果不好，算了算了以后再看看</p>
 <h2 id="使用说明"><a href="#使用说明" class="headerlink" title="使用说明"></a>使用说明</h2><ol>
-<li>在头部加<code>desc</code>可以添加页面信息<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: 新主题记录</div><div class="line">date: 2017-04-04 14:23:26</div><div class="line">tags:</div><div class="line"><span class="bullet">- </span>blog</div><div class="line">categories:</div><div class="line"><span class="bullet">- </span>杂</div><div class="line"><span class="section">desc: 新主题记录</span></div><div class="line">---</div></pre></td></tr></table></figure>
+<li><p>在头部加<code>desc</code>可以添加页面信息</p>
+ <figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: 新主题记录</div><div class="line">date: 2017-04-04 14:23:26</div><div class="line">tags:</div><div class="line"><span class="bullet">- </span>blog</div><div class="line">categories:</div><div class="line"><span class="bullet">- </span>杂</div><div class="line"><span class="section">desc: 新主题记录</span></div><div class="line">---</div></pre></td></tr></table></figure>
+<p> 结果</p>
+ <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"description"</span> <span class="attr">content</span>=<span class="string">"新主题记录"</span>&gt;</span></div></pre></td></tr></table></figure>
 </li>
-</ol>
-<p>结果<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"description"</span> <span class="attr">content</span>=<span class="string">"新主题记录"</span>&gt;</span></div></pre></td></tr></table></figure></p>
-<ol>
 <li><p>文章摘要</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: 新主题记录</div><div class="line">date: 2017-04-04 14:23:26</div><div class="line">tags:</div><div class="line">- blog</div><div class="line">categories:</div><div class="line">- 杂</div><div class="line">desc: 新主题记录</div><div class="line">---</div><div class="line">使用了新主题apollo,记录一下。</div><div class="line">&lt;!--more--&gt;</div></pre></td></tr></table></figure>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: 新主题记录</div><div class="line">date: 2017-04-04 14:23:26</div><div class="line">tags:</div><div class="line">- blog</div><div class="line">categories:</div><div class="line">- 杂</div><div class="line">desc: 新主题记录</div><div class="line">---</div><div class="line">使用了新主题apollo,记录一下。</div><div class="line">&lt;!--more--&gt;</div></pre></td></tr></table></figure>
 </li>
 <li><p>警告块<br><div class="tip"><br>主题好像略简单，以后改改<br></div></p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"tip"</span>&gt;</span></div><div class="line">主题好像略简单，以后改改</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+ <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"tip"</span>&gt;</span></div><div class="line">主题好像略简单，以后改改</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
 </li>
 </ol>
 <h2 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h2><ul>
