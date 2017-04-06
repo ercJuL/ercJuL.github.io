@@ -1,263 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   
-  
     
     <entry>
       <title><![CDATA[新主题记录]]></title>
-      <url>http://ercJuL.github.io/2017/04/04/%E6%96%B0%E4%B8%BB%E9%A2%98%E8%AE%B0%E5%BD%95/</url>
-      <content type="html"><![CDATA[<p>使用了新主题apollo,记录一下。<br><a id="more"></a></p>
-<p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=418603441&auto=1&height=66"></iframe></p>
-<h2 id="使用了新主题apollo"><a href="#使用了新主题apollo" class="headerlink" title="使用了新主题apollo"></a>使用了新主题<a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank" rel="external">apollo</a></h2><ol>
-<li><p>安装需要插件</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive</div></pre></td></tr></table></figure>
-</li>
-<li><p>下载主题</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> https://github.com/pinggod/hexo-theme-apollo.git themes/apollo</div></pre></td></tr></table></figure>
-</li>
-<li><p>启用主题<br> 修改 <code>_config.yml</code> 的 <code>theme</code> 配置项为 <code>apollo</code>:</p>
- <figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="attr">theme:</span> apollo</div><div class="line"></div><div class="line"><span class="comment"># 在归档页面显示所有文章</span></div><div class="line"><span class="comment"># 需要上面安装的 hexo-generator-archive 插件支持</span></div><div class="line"><span class="attr">archive_generator:</span></div><div class="line"><span class="attr">    per_page:</span> <span class="number">0</span> <span class="comment">#0表示不分页，</span></div><div class="line"><span class="attr">    yearly:</span> <span class="literal">false</span> <span class="comment">#生成年度档案</span></div><div class="line"><span class="attr">    monthly:</span> <span class="literal">false</span> <span class="comment">#生成每月存档</span></div><div class="line"><span class="attr">    daily:</span> <span class="literal">false</span></div></pre></td></tr></table></figure>
-</li>
-<li><p>更新</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> themes/apollo </div><div class="line">git pull</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<h2 id="评论"><a href="#评论" class="headerlink" title="评论"></a>评论</h2><p>我是想打开的，然后发现多说要关了，用disqus国内效果不好，算了算了以后再看看</p>
-<h2 id="使用说明"><a href="#使用说明" class="headerlink" title="使用说明"></a>使用说明</h2><ol>
-<li><p>在头部加<code>desc</code>可以添加页面信息</p>
- <figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: 新主题记录</div><div class="line">date: 2017-04-04 14:23:26</div><div class="line">tags:</div><div class="line"><span class="bullet">- </span>blog</div><div class="line">categories:</div><div class="line"><span class="bullet">- </span>杂</div><div class="line"><span class="section">desc: 新主题记录</span></div><div class="line">---</div></pre></td></tr></table></figure>
-<p> 结果</p>
- <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"description"</span> <span class="attr">content</span>=<span class="string">"新主题记录"</span>&gt;</span></div></pre></td></tr></table></figure>
-</li>
-<li><p>文章摘要</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: 新主题记录</div><div class="line">date: 2017-04-04 14:23:26</div><div class="line">tags:</div><div class="line">- blog</div><div class="line">categories:</div><div class="line">- 杂</div><div class="line">desc: 新主题记录</div><div class="line">---</div><div class="line">使用了新主题apollo,记录一下。</div><div class="line">&lt;!--more--&gt;</div></pre></td></tr></table></figure>
-</li>
-<li><p>警告块<br><div class="tip"><br>主题好像略简单，以后改改<br></div></p>
- <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"tip"</span>&gt;</span></div><div class="line">主题好像略简单，以后改改</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-</li>
-</ol>
-<h2 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h2><ul>
-<li>好像换了个主题网易外链iframe正常了，毕竟国内主题</li>
-<li>加了Google Analytics 不知道会不会起作用</li>
-</ul>
-]]></content>
-      
-        <categories>
-            
-            <category> 杂 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> blog </tag>
-            
-        </tags>
-        
+      <url>%2F2017%2F04%2F04%2F%E6%96%B0%E4%B8%BB%E9%A2%98%E8%AE%B0%E5%BD%95%2F</url>
+      <content type="text"><![CDATA[使用了新主题apollo,记录一下。 使用了新主题apollo 安装需要插件 1npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive 下载主题 1git clone https://github.com/pinggod/hexo-theme-apollo.git themes/apollo 启用主题 修改 _config.yml 的 theme 配置项为 apollo: 123456789theme: apollo# 在归档页面显示所有文章# 需要上面安装的 hexo-generator-archive 插件支持archive_generator: per_page: 0 #0表示不分页， yearly: false #生成年度档案 monthly: false #生成每月存档 daily: false 更新 12cd themes/apollo git pull 评论我是想打开的，然后发现多说要关了，用disqus国内效果不好，算了算了以后再看看 使用说明 在头部加desc可以添加页面信息 123456789---title: 新主题记录date: 2017-04-04 14:23:26tags:- blogcategories:- 杂desc: 新主题记录--- 结果 1&lt;meta name="description" content="新主题记录"&gt; 文章摘要 1234567891011---title: 新主题记录date: 2017-04-04 14:23:26tags:- blogcategories:- 杂desc: 新主题记录---使用了新主题apollo,记录一下。&lt;!--more--&gt; 警告块主题好像略简单，以后改改 123&lt;div class="tip"&gt;主题好像略简单，以后改改&lt;/div&gt; 其它 好像换了个主题网易外链iframe正常了，毕竟国内主题 加了Google Analytics 不知道会不会起作用]]></content>
     </entry>
+
     
     <entry>
       <title><![CDATA[hexo图片及音乐插入]]></title>
-      <url>http://ercJuL.github.io/2017/04/01/hexo%E5%9B%BE%E7%89%87%E5%8F%8A%E9%9F%B3%E4%B9%90%E6%8F%92%E5%85%A5/</url>
-      <content type="html"><![CDATA[<h2 id="图片插入"><a href="#图片插入" class="headerlink" title="图片插入"></a>图片插入</h2><p>在根目录下的_config.yml中确认 <code>post_asset_folder: true</code><br>用 <code>hexo new file_name</code> 时会自动创建同名文件夹<br>在file_name.md用 <code>![图片描述](图片文件全名)</code> 可以直接使用同名文件夹下的图片</p>
-<h2 id="音乐插入"><a href="#音乐插入" class="headerlink" title="音乐插入"></a>音乐插入</h2><ol>
-<li><p>同图片放文件夹方式使用audio标签来使用<br><audio controls="controls" autoplay="autoplay" loop="loop"><br><source src="陈粒-小半.mp3" type="audio/mpeg"><br></audio></p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">controls</span>=<span class="string">"controls"</span> <span class="attr">autoplay</span>=<span class="string">"autoplay"</span> <span class="attr">loop</span>=<span class="string">"loop"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"陈粒-小半.mp3"</span> <span class="attr">type</span>=<span class="string">"audio/mpeg"</span> /&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>以下属性仅支持html5游览器可用<br>controls 显示播放控件，无控件参考<a href="https://ercjul.github.io/2017/03/31/%E6%96%87%E7%8C%AE%20%E8%B0%B7%E6%AD%8C%20%E5%AD%A6%E6%9C%AF%20%E9%9F%B3%E4%B9%90/">文献 谷歌 学术 音乐</a><br>autoplay 自动播放，大部分手机游览器会屏蔽此属性<br>loop 循环播放</p>
-</li>
-<li><p>使用网易外链，网易好像不支持https外链，在github可能不能使用，测试一下<br><iframe frameborder="0" width="330" height="86" marginheight="0" marginwidth="0" src="//music.163.com/outchain/player?type=2&id=468517654&auto=0&height=66"></iframe><br>原iframe代码如下</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">frameborder</span>=<span class="string">"0"</span> <span class="attr">border</span>=<span class="string">"0"</span> <span class="attr">marginwidth</span>=<span class="string">"0"</span> <span class="attr">marginheight</span>=<span class="string">"0"</span> <span class="attr">width</span>=<span class="string">"330"</span> <span class="attr">height</span>=<span class="string">"86"</span> <span class="attr">src</span>=<span class="string">"//music.163.com/outchain/player?type=2&amp;id=468517654&amp;auto=0&amp;height=66"</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>不考虑兼容性的话建议改成</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">embed</span> <span class="attr">src</span>=<span class="string">"//music.163.com/outchain/player?type=2&amp;id=468517654&amp;auto=0&amp;height=66"</span> <span class="attr">width</span>=<span class="string">"330"</span> <span class="attr">height</span>=<span class="string">"86"</span>&gt;</span><span class="tag">&lt;/<span class="name">embed</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>两种方式在Chrome IE Edge的不同表现<br><img src="/2017/04/01/hexo图片及音乐插入/chrome.png" alt="chrome"><br><img src="/2017/04/01/hexo图片及音乐插入/IE.png" alt="IE"><br><img src="/2017/04/01/hexo图片及音乐插入/Edge.png" alt="Edge"></p>
-</li>
-</ol>
-<p>使用flash并不建议。。。。</p>
-<p><embed src="//music.163.com/style/swf/widget.swf?sid=468517654&type=2&auto=0&width=320&height=66" width="340" height="86" allownetworking="all"><br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">embed</span> <span class="attr">src</span>=<span class="string">"//music.163.com/style/swf/widget.swf?sid=468517654&amp;type=2&amp;auto=0&amp;width=320&amp;height=66"</span> <span class="attr">width</span>=<span class="string">"340"</span> <span class="attr">height</span>=<span class="string">"86"</span>  <span class="attr">allowNetworking</span>=<span class="string">"all"</span>&gt;</span><span class="tag">&lt;/<span class="name">embed</span>&gt;</span></div></pre></td></tr></table></figure></p>
-]]></content>
-      
-        <categories>
-            
-            <category> 杂 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> hexo静态博客 </tag>
-            
-        </tags>
-        
+      <url>%2F2017%2F04%2F01%2Fhexo%E5%9B%BE%E7%89%87%E5%8F%8A%E9%9F%B3%E4%B9%90%E6%8F%92%E5%85%A5%2F</url>
+      <content type="text"><![CDATA[图片插入在根目录下的_config.yml中确认 post_asset_folder: true用 hexo new file_name 时会自动创建同名文件夹在file_name.md用 ![图片描述](图片文件全名) 可以直接使用同名文件夹下的图片 音乐插入 同图片放文件夹方式使用audio标签来使用 123&lt;audio controls="controls" autoplay="autoplay" loop="loop"&gt; &lt;source src="陈粒-小半.mp3" type="audio/mpeg" /&gt;&lt;/audio&gt; 以下属性仅支持html5游览器可用controls 显示播放控件，无控件参考文献 谷歌 学术 音乐autoplay 自动播放，大部分手机游览器会屏蔽此属性loop 循环播放 使用网易外链，网易好像不支持https外链，在github可能不能使用，测试一下原iframe代码如下 1&lt;iframe frameborder="0" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&amp;id=468517654&amp;auto=0&amp;height=66"&gt;&lt;/iframe&gt; 不考虑兼容性的话建议改成 1&lt;embed src="//music.163.com/outchain/player?type=2&amp;id=468517654&amp;auto=0&amp;height=66" width="330" height="86"&gt;&lt;/embed&gt; 两种方式在Chrome IE Edge的不同表现 使用flash并不建议。。。。 1&lt;embed src="//music.163.com/style/swf/widget.swf?sid=468517654&amp;type=2&amp;auto=0&amp;width=320&amp;height=66" width="340" height="86" allowNetworking="all"&gt;&lt;/embed&gt;]]></content>
     </entry>
+
     
     <entry>
       <title><![CDATA[文献 谷歌 学术 音乐]]></title>
-      <url>http://ercJuL.github.io/2017/03/31/%E6%96%87%E7%8C%AE%20%E8%B0%B7%E6%AD%8C%20%E5%AD%A6%E6%9C%AF%20%E9%9F%B3%E4%B9%90/</url>
-      <content type="html"><![CDATA[<audio loop="loop" autoplay="autoplay"><br>    <source src="虚拟-陈粒.mp3" type="audio/mpeg"><br></audio>
-
-<blockquote>
-<p>以前用的牛牛图书馆知网的接口都用不了，换其他方式用吧</p>
-</blockquote>
-<h2 id="文献搜索与下载"><a href="#文献搜索与下载" class="headerlink" title="文献搜索与下载"></a>文献搜索与下载</h2><ol>
-<li>国家哲学社会科学文献中心:<a href="http://www.ncpssd.org/" target="_blank" rel="external">国家哲学社会科学文献中心</a></li>
-<li>酷问搜索:<a href="http://www.koovin.com" target="_blank" rel="external">酷问搜索</a></li>
-<li>国家科技文献中心:<a href="http://www.nstl.gov.cn/" target="_blank" rel="external">国家科技文献中心</a></li>
-</ol>
-<h2 id="谷歌镜像"><a href="#谷歌镜像" class="headerlink" title="谷歌镜像"></a>谷歌镜像</h2><p>一、谷歌搜索（部分支持谷歌学术）</p>
-<ol>
-<li>樱花镜像:<a href="https://nginx-google.arukascloud.io/" target="_blank" rel="external">樱花镜像</a></li>
-<li>思谋学术镜像:<a href="http://dir.scmor.com/google/" target="_blank" rel="external">思谋学术镜像</a></li>
-<li>GuGeab:<a href="https://gugeabc.xyz/" target="_blank" rel="external">GuGeab</a></li>
-</ol>
-<p>二、谷歌学术</p>
-<ol>
-<li>学术搜索:<a href="http://so.sciencesoft.cn/" target="_blank" rel="external">学术搜索</a></li>
-<li>Glgoo:<a href="https://xue.glgoo.com/" target="_blank" rel="external">Glgoo</a></li>
-<li>谷老弟:<a href="https://www.gulaodi.com/" target="_blank" rel="external">谷老弟</a></li>
-</ol>
-<h2 id="音乐搜索"><a href="#音乐搜索" class="headerlink" title="音乐搜索"></a>音乐搜索</h2><ol>
-<li>音乐搜索器:<a href="http://music.2333.me/" target="_blank" rel="external">音乐搜索器</a></li>
-</ol>
-]]></content>
-      
-        <categories>
-            
-            <category> 杂 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> 文献 </tag>
-            
-            <tag> 谷歌 </tag>
-            
-            <tag> 学术 </tag>
-            
-            <tag> 音乐 </tag>
-            
-            <tag> 下载 </tag>
-            
-        </tags>
-        
+      <url>%2F2017%2F03%2F31%2F%E6%96%87%E7%8C%AE%20%E8%B0%B7%E6%AD%8C%20%E5%AD%A6%E6%9C%AF%20%E9%9F%B3%E4%B9%90%2F</url>
+      <content type="text"><![CDATA[以前用的牛牛图书馆知网的接口都用不了，换其他方式用吧 文献搜索与下载 国家哲学社会科学文献中心:国家哲学社会科学文献中心 酷问搜索:酷问搜索 国家科技文献中心:国家科技文献中心 谷歌镜像一、谷歌搜索（部分支持谷歌学术） 樱花镜像:樱花镜像 思谋学术镜像:思谋学术镜像 GuGeab:GuGeab 二、谷歌学术 学术搜索:学术搜索 Glgoo:Glgoo 谷老弟:谷老弟 音乐搜索 音乐搜索器:音乐搜索器]]></content>
     </entry>
+
     
     <entry>
       <title><![CDATA[mac版欧路词典破解记录]]></title>
-      <url>http://ercJuL.github.io/2017/03/24/mac%E7%89%88%E6%AC%A7%E8%B7%AF%E8%AF%8D%E5%85%B8%E7%A0%B4%E8%A7%A3%E8%AE%B0%E5%BD%95/</url>
-      <content type="html"><![CDATA[<blockquote>
-<p>软件未加密，也无暗桩</p>
-</blockquote>
-<h2 id="使用软件"><a href="#使用软件" class="headerlink" title="使用软件"></a>使用软件</h2><pre><code>hopper
-</code></pre><h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><ol>
-<li>载入程序分析，发现可疑函数<br><img src="/2017/03/24/mac版欧路词典破解记录/1.png" alt="函数查找"></li>
-<li>在函数入口下断,debug，错误注册码发生跳转<br><img src="/2017/03/24/mac版欧路词典破解记录/2.png" alt="关键跳"></li>
-<li>重启程序，在同一个位置改Z标志,发现注册成功<br><img src="/2017/03/24/mac版欧路词典破解记录/3.png" alt="跳转"></li>
-<li>nop此处跳转，保存文件<br><img src="/2017/03/24/mac版欧路词典破解记录/4.png" alt="nop,保存"></li>
-<li>复制爆破文件到应用目录完成破解<br><img src="/2017/03/24/mac版欧路词典破解记录/5.png" alt="完"><br><img src="/2017/03/24/mac版欧路词典破解记录/6.png" alt=""></li>
-</ol>
-<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><pre><code>Mac破解与Win基本一致，Mac可能还更简单一点。
-虚拟机性能确实有点低，debug起来卡
-</code></pre>]]></content>
-      
-        <categories>
-            
-            <category> 软件逆向 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> 破解记录 </tag>
-            
-        </tags>
-        
+      <url>%2F2017%2F03%2F24%2Fmac%E7%89%88%E6%AC%A7%E8%B7%AF%E8%AF%8D%E5%85%B8%E7%A0%B4%E8%A7%A3%E8%AE%B0%E5%BD%95%2F</url>
+      <content type="text"><![CDATA[软件未加密，也无暗桩 使用软件hopper 过程 载入程序分析，发现可疑函数 在函数入口下断,debug，错误注册码发生跳转 重启程序，在同一个位置改Z标志,发现注册成功 nop此处跳转，保存文件 复制爆破文件到应用目录完成破解 结束语Mac破解与Win基本一致，Mac可能还更简单一点。 虚拟机性能确实有点低，debug起来卡]]></content>
     </entry>
+
     
     <entry>
       <title><![CDATA[法语助手无限试用记录]]></title>
-      <url>http://ercJuL.github.io/2017/03/23/%E6%B3%95%E8%AF%AD%E5%8A%A9%E6%89%8B%E6%97%A0%E9%99%90%E8%AF%95%E7%94%A8%E8%AE%B0%E5%BD%95/</url>
-      <content type="html"><![CDATA[<h2 id="使用软件"><a href="#使用软件" class="headerlink" title="使用软件"></a>使用软件</h2><blockquote>
-<p>软件本身未加密，也未发现自检或暗装</p>
-</blockquote>
-<pre><code>火绒剑
-</code></pre><h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><ol>
-<li>打开软件发现未注册且有试用次数限制，试用版可以使用全部功能<br><img src="/2017/03/23/法语助手无限试用记录/1.png" alt="关于"></li>
-<li>打开火绒剑监控–只包含frhelper.exe，发现可疑注册表项<br><img src="/2017/03/23/法语助手无限试用记录/2.png" alt="监控"><br>3.转到注册表，显示0x31(49)，就是目标<br><img src="/2017/03/23/法语助手无限试用记录/3.png" alt="注册表"></li>
-<li>编辑注册表导入，<em>*</em>.reg<br><img src="/2017/03/23/法语助手无限试用记录/4.png" alt="cracked"><br> 期间测试，发现首位不能为1，判断次数的变量应该是有符号数，最大可以为0x7fffffff<br>5.重新打开软件<br><img src="/2017/03/23/法语助手无限试用记录/5.png" alt="成功"></li>
-</ol>
-<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><pre><code>本身不难，软件未设暗装(暂未发现)，仅检测注册表项
-</code></pre>]]></content>
-      
-        <categories>
-            
-            <category> 软件逆向 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> 破解记录 </tag>
-            
-        </tags>
-        
+      <url>%2F2017%2F03%2F23%2F%E6%B3%95%E8%AF%AD%E5%8A%A9%E6%89%8B%E6%97%A0%E9%99%90%E8%AF%95%E7%94%A8%E8%AE%B0%E5%BD%95%2F</url>
+      <content type="text"><![CDATA[使用软件 软件本身未加密，也未发现自检或暗装 火绒剑 过程 打开软件发现未注册且有试用次数限制，试用版可以使用全部功能 打开火绒剑监控–只包含frhelper.exe，发现可疑注册表项3.转到注册表，显示0x31(49)，就是目标 编辑注册表导入，*.reg 期间测试，发现首位不能为1，判断次数的变量应该是有符号数，最大可以为0x7fffffff5.重新打开软件 结束语本身不难，软件未设暗装(暂未发现)，仅检测注册表项]]></content>
     </entry>
+
     
     <entry>
       <title><![CDATA[未来教育二级c模拟软件破解记录]]></title>
-      <url>http://ercJuL.github.io/2017/03/22/%E6%9C%AA%E6%9D%A5%E6%95%99%E8%82%B2%E4%BA%8C%E7%BA%A7c%E6%A8%A1%E6%8B%9F%E8%BD%AF%E4%BB%B6%E7%A0%B4%E8%A7%A3%E8%AE%B0%E5%BD%95/</url>
-      <content type="html"><![CDATA[<h2 id="使用软件"><a href="#使用软件" class="headerlink" title="使用软件"></a>使用软件</h2><pre><code>dnSpy
-</code></pre><h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><ol>
-<li><p>根据经验，验证过程在主程序system3.0中</p>
-<blockquote>
-<p>成功找到算法位置，但是全文使用代码混淆，分析较困难，使用de4dot反混淆失败，应该使用了最新的代码混淆工具</p>
-</blockquote>
-<p>算法位置：System3.0(程序) –&gt; PRyNfW6mjuaTGj2S0j(命名空间) –&gt; string x18ZyIKtY(int 形参)(方法)</p>
-</li>
-<li><p>算法逆向较难，查找调用位置</p>
-<blockquote>
-<p>发现systemFrame.dll猜测为程序GUI框架<br>打开发现未混淆<br>找到注册界面框架</p>
-</blockquote>
-<p> SystemFrame.dll –&gt; SystemFrame.Frame –&gt; RegisterFrame(注册界面) –&gt; btnSubmit-Click(注册按钮)</p>
-</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div></pre></td><td class="code"><pre><div class="line">// SystemFrame.Frame.RegisterFrame</div><div class="line">// Token: 0x060000E3 RID: 227 RVA: 0x0000F2A4 File Offset: 0x0000D6A4</div><div class="line">[MethodImpl(MethodImplOptions.NoInlining)]</div><div class="line">private void btnSubmit_Click(object sender, EventArgs e)</div><div class="line">&#123;</div><div class="line">    while (false)</div><div class="line">    &#123;</div><div class="line">        object arg_0A_0 = null[0];</div><div class="line">    &#125;</div><div class="line">    if (!this.CheckTextBox())</div><div class="line">    &#123;</div><div class="line">        return;</div><div class="line">    &#125;</div><div class="line">    string text = string.Empty;</div><div class="line">    if (!new CheckNetStatus().CallPing(x2e4SAFyXo7xT4t2H1.x18ZyIKtY(704)))</div><div class="line">    &#123;</div><div class="line">        if (this.tbSN.Text == x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7028) &amp;&amp; Parameters.CurrentCourse.Sign.ToLower() == x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7060))</div><div class="line">        &#123;</div><div class="line">            text = x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7086);</div><div class="line">        &#125;</div><div class="line">        else</div><div class="line">        &#123;</div><div class="line">            if (!(this.tbSN.Text == x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7028)) || !(Parameters.CurrentCourse.Sign.ToLower() == x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7094)))</div><div class="line">            &#123;</div><div class="line">                new TipsOK(x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7106), x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7118))</div><div class="line">                &#123;</div><div class="line">                    SetIco = Resources.B_weiqu</div><div class="line">                &#125;.ShowDialog();</div><div class="line">                return;</div><div class="line">            &#125;</div><div class="line">            text = x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7086);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    else</div><div class="line">    &#123;</div><div class="line">        text = new UserRegister().PostInfo(this.CreateJson());</div><div class="line">    &#125;</div><div class="line">    string key;</div><div class="line">    switch (key = text)</div><div class="line">    &#123;</div><div class="line">    &#123;</div><div class="line">        base.Close();</div><div class="line">        this.isOk = true;</div><div class="line">        SqliteHelper.set_ConStr(AppDomain.CurrentDomain.BaseDirectory + x2e4SAFyXo7xT4t2H1.x18ZyIKtY(818) + Parameters.CurrentCourse.Sign + x2e4SAFyXo7xT4t2H1.x18ZyIKtY(832));</div><div class="line">        JFT_Class jFT_Class = new JFT_Class();</div><div class="line">        JFT_Class model = jFT_Class.GetModel();</div><div class="line">        model.set_SN(this.tbSN.Text);</div><div class="line">        model.set_ClassType(StringTest.DesEncrypt(Parameters.HMAC + this.tbSN.Text + Parameters.CurrentCourse.Sign));</div><div class="line">        jFT_Class.UpdateClass(model);</div><div class="line">        if (new CreateTables().CreateDataSource())</div><div class="line">        &#123;</div><div class="line">            JFT_Account jFT_Account = new JFT_Account();</div><div class="line">            jFT_Account.set_Email(this.tbUser.Text);</div><div class="line">            jFT_Account.set_PassWord(this.tbPass.Text);</div><div class="line">            jFT_Account.set_AddTime(DateTime.Now.ToString(x2e4SAFyXo7xT4t2H1.x18ZyIKtY(6422)));</div><div class="line">            jFT_Account.set_Province(((ProviceModel)this.comboBox1.SelectedItem).id.ToString());</div><div class="line">            new JFT_Account().Insert(jFT_Account);</div><div class="line">        &#125;</div><div class="line">        new TipsOK(x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7106), x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7366))</div><div class="line">        &#123;</div><div class="line">            SetIco = Resources.B_kaixin</div><div class="line">        &#125;.ShowDialog();</div><div class="line">        SqliteHelper.set_ConStr(AppDomain.CurrentDomain.BaseDirectory + x2e4SAFyXo7xT4t2H1.x18ZyIKtY(818) + Parameters.CurrentCourse.Sign + x2e4SAFyXo7xT4t2H1.x18ZyIKtY(832));</div><div class="line">        return;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">        new TipsOK(x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7106), x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7390))</div><div class="line">        &#123;</div><div class="line">            SetIco = Resources.B_wuyu</div><div class="line">        &#125;.ShowDialog();</div><div class="line">        return;</div><div class="line"></div><div class="line">        new TipsOK(x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7106), x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7434))</div><div class="line">        &#123;</div><div class="line">            SetIco = Resources.B_wuyu</div><div class="line">        &#125;.ShowDialog();</div><div class="line">        return;</div><div class="line"></div><div class="line">        new TipsOK(x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7106), x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7488))</div><div class="line">        &#123;</div><div class="line">            SetIco = Resources.B_wuyu</div><div class="line">        &#125;.ShowDialog();</div><div class="line">        return;</div><div class="line"></div><div class="line">        new TipsOK(x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7106), x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7532))</div><div class="line">        &#123;</div><div class="line">            SetIco = Resources.B_wuyu</div><div class="line">        &#125;.ShowDialog();</div><div class="line">        return;</div><div class="line"></div><div class="line">        new TipsOK(x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7106), x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7580))</div><div class="line">        &#123;</div><div class="line">            SetIco = Resources.B_wuyu</div><div class="line">        &#125;.ShowDialog();</div><div class="line">        return;</div><div class="line"></div><div class="line">        new TipsOK(x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7106), x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7614))</div><div class="line">        &#123;</div><div class="line">            SetIco = Resources.B_weiqu</div><div class="line">        &#125;.ShowDialog();</div><div class="line">        return;</div><div class="line"></div><div class="line">        new TipsOK(x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7106), x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7654) + this.tbUser.Text + DateTime.Now.ToString(x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7690)) + x2e4SAFyXo7xT4t2H1.x18ZyIKtY(3660))</div><div class="line">        &#123;</div><div class="line">            SetIco = Resources.B_weiqu</div><div class="line">        &#125;.ShowDialog();</div><div class="line">        return;</div><div class="line">    &#125;</div><div class="line">    new TipsOK(x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7106), x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7706))</div><div class="line">    &#123;</div><div class="line">        SetIco = Resources.B_weiqu</div><div class="line">    &#125;.ShowDialog();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<ul>
-<li>15-37 网络验证</li>
-<li>39-65 离线密匙验证</li>
-<li>观察到对话框资源里有B_kaixin(开心) B_wuyu(无语) B_weiqu(委屈)，很直白kaixin是注册成功、无语应该是瞎填注册码、委屈应该是软件问题的错误</li>
-<li>屏蔽网络验证，跳过15-37</li>
-<li>始终验证成功修改switch判断只跳成功</li>
-</ul>
-<ol>
-<li>切换IL语言</li>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">/* 0x0000D6E6 3AD1000000   */ IL_0036: brtrue    IL_010C</div><div class="line">/*修改为*/</div><div class="line">/* 0x0000D6C4 3A01000000   */ IL_0014: brtrue    IL_0208</div></pre></td></tr></table></figure>
-<p> 修改后代码为<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line">// SystemFrame.Frame.RegisterFrame</div><div class="line">// Token: 0x060000E3 RID: 227 RVA: 0x000115C8 File Offset: 0x0000F7C8</div><div class="line">[MethodImpl(MethodImplOptions.NoInlining)]</div><div class="line">private void btnSubmit_Click(object sender, EventArgs e)</div><div class="line">&#123;</div><div class="line">    while (false)</div><div class="line">    &#123;</div><div class="line">        object arg_0A_0 = null[0];</div><div class="line">    &#125;</div><div class="line">    if (!this.CheckTextBox())</div><div class="line">    &#123;</div><div class="line">        return;</div><div class="line">    &#125;</div><div class="line">    base.Close();</div><div class="line">    this.isOk = true;</div><div class="line">    SqliteHelper.set_ConStr(AppDomain.CurrentDomain.BaseDirectory + x2e4SAFyXo7xT4t2H1.x18ZyIKtY(818) + Parameters.CurrentCourse.Sign + x2e4SAFyXo7xT4t2H1.x18ZyIKtY(832));</div><div class="line">    JFT_Class jFT_Class = new JFT_Class();</div><div class="line">    JFT_Class model = jFT_Class.GetModel();</div><div class="line">    model.set_SN(this.tbSN.Text);</div><div class="line">    model.set_ClassType(StringTest.DesEncrypt(Parameters.HMAC + this.tbSN.Text + Parameters.CurrentCourse.Sign));</div><div class="line">    jFT_Class.UpdateClass(model);</div><div class="line">    if (new CreateTables().CreateDataSource())</div><div class="line">    &#123;</div><div class="line">        JFT_Account jFT_Account = new JFT_Account();</div><div class="line">        jFT_Account.set_Email(this.tbUser.Text);</div><div class="line">        jFT_Account.set_PassWord(this.tbPass.Text);</div><div class="line">        jFT_Account.set_AddTime(DateTime.Now.ToString(x2e4SAFyXo7xT4t2H1.x18ZyIKtY(6422)));</div><div class="line">        jFT_Account.set_Province(((ProviceModel)this.comboBox1.SelectedItem).id.ToString());</div><div class="line">        new JFT_Account().Insert(jFT_Account);</div><div class="line">    &#125;</div><div class="line">    new TipsOK(x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7106), x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7366))</div><div class="line">    &#123;</div><div class="line">        SetIco = Resources.B_kaixin</div><div class="line">    &#125;.ShowDialog();</div><div class="line">    SqliteHelper.set_ConStr(AppDomain.CurrentDomain.BaseDirectory + x2e4SAFyXo7xT4t2H1.x18ZyIKtY(818) + Parameters.CurrentCourse.Sign + x2e4SAFyXo7xT4t2H1.x18ZyIKtY(832));</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p> 已无网络验证，直接执行注册成功对话框<br>以上也可以分析出，只要执行<code>SqliteHelper.set_ConStr(AppDomain.CurrentDomain.BaseDirectory + x2e4SAFyXo7xT4t2H1.x18ZyIKtY(818) + Parameters.CurrentCourse.Sign + x2e4SAFyXo7xT4t2H1.x18ZyIKtY(832));</code>即可完成注册，主要是屏蔽网络验证！</p>
-</li>
-</ol>
-<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><pre><code>某人明明书后有激活码和软件下载地址都不知道看下......
-</code></pre>]]></content>
-      
-        <categories>
-            
-            <category> 软件逆向 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> 破解记录 </tag>
-            
-        </tags>
-        
+      <url>%2F2017%2F03%2F22%2F%E6%9C%AA%E6%9D%A5%E6%95%99%E8%82%B2%E4%BA%8C%E7%BA%A7c%E6%A8%A1%E6%8B%9F%E8%BD%AF%E4%BB%B6%E7%A0%B4%E8%A7%A3%E8%AE%B0%E5%BD%95%2F</url>
+      <content type="text"><![CDATA[使用软件dnSpy 过程 根据经验，验证过程在主程序system3.0中 成功找到算法位置，但是全文使用代码混淆，分析较困难，使用de4dot反混淆失败，应该使用了最新的代码混淆工具 算法位置：System3.0(程序) –&gt; PRyNfW6mjuaTGj2S0j(命名空间) –&gt; string x18ZyIKtY(int 形参)(方法) 算法逆向较难，查找调用位置 发现systemFrame.dll猜测为程序GUI框架打开发现未混淆找到注册界面框架 SystemFrame.dll –&gt; SystemFrame.Frame –&gt; RegisterFrame(注册界面) –&gt; btnSubmit-Click(注册按钮) 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113// SystemFrame.Frame.RegisterFrame// Token: 0x060000E3 RID: 227 RVA: 0x0000F2A4 File Offset: 0x0000D6A4[MethodImpl(MethodImplOptions.NoInlining)]private void btnSubmit_Click(object sender, EventArgs e)&#123; while (false) &#123; object arg_0A_0 = null[0]; &#125; if (!this.CheckTextBox()) &#123; return; &#125; string text = string.Empty; if (!new CheckNetStatus().CallPing(x2e4SAFyXo7xT4t2H1.x18ZyIKtY(704))) &#123; if (this.tbSN.Text == x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7028) &amp;&amp; Parameters.CurrentCourse.Sign.ToLower() == x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7060)) &#123; text = x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7086); &#125; else &#123; if (!(this.tbSN.Text == x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7028)) || !(Parameters.CurrentCourse.Sign.ToLower() == x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7094))) &#123; new TipsOK(x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7106), x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7118)) &#123; SetIco = Resources.B_weiqu &#125;.ShowDialog(); return; &#125; text = x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7086); &#125; &#125; else &#123; text = new UserRegister().PostInfo(this.CreateJson()); &#125; string key; switch (key = text) &#123; &#123; base.Close(); this.isOk = true; SqliteHelper.set_ConStr(AppDomain.CurrentDomain.BaseDirectory + x2e4SAFyXo7xT4t2H1.x18ZyIKtY(818) + Parameters.CurrentCourse.Sign + x2e4SAFyXo7xT4t2H1.x18ZyIKtY(832)); JFT_Class jFT_Class = new JFT_Class(); JFT_Class model = jFT_Class.GetModel(); model.set_SN(this.tbSN.Text); model.set_ClassType(StringTest.DesEncrypt(Parameters.HMAC + this.tbSN.Text + Parameters.CurrentCourse.Sign)); jFT_Class.UpdateClass(model); if (new CreateTables().CreateDataSource()) &#123; JFT_Account jFT_Account = new JFT_Account(); jFT_Account.set_Email(this.tbUser.Text); jFT_Account.set_PassWord(this.tbPass.Text); jFT_Account.set_AddTime(DateTime.Now.ToString(x2e4SAFyXo7xT4t2H1.x18ZyIKtY(6422))); jFT_Account.set_Province(((ProviceModel)this.comboBox1.SelectedItem).id.ToString()); new JFT_Account().Insert(jFT_Account); &#125; new TipsOK(x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7106), x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7366)) &#123; SetIco = Resources.B_kaixin &#125;.ShowDialog(); SqliteHelper.set_ConStr(AppDomain.CurrentDomain.BaseDirectory + x2e4SAFyXo7xT4t2H1.x18ZyIKtY(818) + Parameters.CurrentCourse.Sign + x2e4SAFyXo7xT4t2H1.x18ZyIKtY(832)); return; &#125; new TipsOK(x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7106), x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7390)) &#123; SetIco = Resources.B_wuyu &#125;.ShowDialog(); return; new TipsOK(x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7106), x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7434)) &#123; SetIco = Resources.B_wuyu &#125;.ShowDialog(); return; new TipsOK(x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7106), x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7488)) &#123; SetIco = Resources.B_wuyu &#125;.ShowDialog(); return; new TipsOK(x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7106), x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7532)) &#123; SetIco = Resources.B_wuyu &#125;.ShowDialog(); return; new TipsOK(x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7106), x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7580)) &#123; SetIco = Resources.B_wuyu &#125;.ShowDialog(); return; new TipsOK(x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7106), x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7614)) &#123; SetIco = Resources.B_weiqu &#125;.ShowDialog(); return; new TipsOK(x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7106), x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7654) + this.tbUser.Text + DateTime.Now.ToString(x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7690)) + x2e4SAFyXo7xT4t2H1.x18ZyIKtY(3660)) &#123; SetIco = Resources.B_weiqu &#125;.ShowDialog(); return; &#125; new TipsOK(x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7106), x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7706)) &#123; SetIco = Resources.B_weiqu &#125;.ShowDialog();&#125; 15-37 网络验证 39-65 离线密匙验证 观察到对话框资源里有B_kaixin(开心) B_wuyu(无语) B_weiqu(委屈)，很直白kaixin是注册成功、无语应该是瞎填注册码、委屈应该是软件问题的错误 屏蔽网络验证，跳过15-37 始终验证成功修改switch判断只跳成功 切换IL语言 123/* 0x0000D6E6 3AD1000000 */ IL_0036: brtrue IL_010C/*修改为*//* 0x0000D6C4 3A01000000 */ IL_0014: brtrue IL_0208 修改后代码为123456789101112131415161718192021222324252627282930313233343536// SystemFrame.Frame.RegisterFrame// Token: 0x060000E3 RID: 227 RVA: 0x000115C8 File Offset: 0x0000F7C8[MethodImpl(MethodImplOptions.NoInlining)]private void btnSubmit_Click(object sender, EventArgs e)&#123; while (false) &#123; object arg_0A_0 = null[0]; &#125; if (!this.CheckTextBox()) &#123; return; &#125; base.Close(); this.isOk = true; SqliteHelper.set_ConStr(AppDomain.CurrentDomain.BaseDirectory + x2e4SAFyXo7xT4t2H1.x18ZyIKtY(818) + Parameters.CurrentCourse.Sign + x2e4SAFyXo7xT4t2H1.x18ZyIKtY(832)); JFT_Class jFT_Class = new JFT_Class(); JFT_Class model = jFT_Class.GetModel(); model.set_SN(this.tbSN.Text); model.set_ClassType(StringTest.DesEncrypt(Parameters.HMAC + this.tbSN.Text + Parameters.CurrentCourse.Sign)); jFT_Class.UpdateClass(model); if (new CreateTables().CreateDataSource()) &#123; JFT_Account jFT_Account = new JFT_Account(); jFT_Account.set_Email(this.tbUser.Text); jFT_Account.set_PassWord(this.tbPass.Text); jFT_Account.set_AddTime(DateTime.Now.ToString(x2e4SAFyXo7xT4t2H1.x18ZyIKtY(6422))); jFT_Account.set_Province(((ProviceModel)this.comboBox1.SelectedItem).id.ToString()); new JFT_Account().Insert(jFT_Account); &#125; new TipsOK(x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7106), x2e4SAFyXo7xT4t2H1.x18ZyIKtY(7366)) &#123; SetIco = Resources.B_kaixin &#125;.ShowDialog(); SqliteHelper.set_ConStr(AppDomain.CurrentDomain.BaseDirectory + x2e4SAFyXo7xT4t2H1.x18ZyIKtY(818) + Parameters.CurrentCourse.Sign + x2e4SAFyXo7xT4t2H1.x18ZyIKtY(832));&#125; 已无网络验证，直接执行注册成功对话框以上也可以分析出，只要执行SqliteHelper.set_ConStr(AppDomain.CurrentDomain.BaseDirectory + x2e4SAFyXo7xT4t2H1.x18ZyIKtY(818) + Parameters.CurrentCourse.Sign + x2e4SAFyXo7xT4t2H1.x18ZyIKtY(832));即可完成注册，主要是屏蔽网络验证！ 结束语某人明明书后有激活码和软件下载地址都不知道看下......]]></content>
     </entry>
+
     
   
   
