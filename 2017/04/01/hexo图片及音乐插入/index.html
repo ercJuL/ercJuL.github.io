@@ -94,8 +94,6 @@
 
 
 
-  
-
 
   <link rel="alternate" href="/atom.xml" title="ercJuL's Blog" type="application/atom+xml" />
 
@@ -124,7 +122,7 @@
 <meta property="og:image" content="http://ercJuL.github.io/2017/04/01/hexo图片及音乐插入/chrome.png">
 <meta property="og:image" content="http://ercJuL.github.io/2017/04/01/hexo图片及音乐插入/IE.png">
 <meta property="og:image" content="http://ercJuL.github.io/2017/04/01/hexo图片及音乐插入/Edge.png">
-<meta property="og:updated_time" content="2017-04-01T05:05:29.054Z">
+<meta property="og:updated_time" content="2017-04-07T05:33:17.227Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo图片及音乐插入">
 <meta name="twitter:description" content="图片插入在根目录下的_config.yml中确认 post_asset_folder: true用 hexo new file_name 时会自动创建同名文件夹在file_name.md用 ![图片描述](图片文件全名) 可以直接使用同名文件夹下的图片
@@ -448,7 +446,7 @@
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">controls</span>=<span class="string">"controls"</span> <span class="attr">autoplay</span>=<span class="string">"autoplay"</span> <span class="attr">loop</span>=<span class="string">"loop"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"陈粒-小半.mp3"</span> <span class="attr">type</span>=<span class="string">"audio/mpeg"</span> /&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></div></pre></td></tr></table></figure>
 <p>以下属性仅支持html5游览器可用<br>controls 显示播放控件，无控件参考<a href="https://ercjul.github.io/2017/03/31/%E6%96%87%E7%8C%AE%20%E8%B0%B7%E6%AD%8C%20%E5%AD%A6%E6%9C%AF%20%E9%9F%B3%E4%B9%90/">文献 谷歌 学术 音乐</a><br>autoplay 自动播放，大部分手机游览器会屏蔽此属性<br>loop 循环播放</p>
 </li>
-<li><p>使用网易外链，网易好像不支持https外链，在github可能不能使用，测试一下<br><iframe frameborder="0" width="330" height="86" marginheight="0" marginwidth="0" src="//music.163.com/outchain/player?type=2&id=468517654&auto=0&height=66"></iframe><br>原iframe代码如下</p>
+<li><p>使用网易外链，网易好像不支持https外链，在github可能不能使用，测试一下<br><iframe class="wangyi" frameborder="0" width="330" height="86" marginheight="0" marginwidth="0" src="//music.163.com/outchain/player?type=2&id=468517654&auto=0&height=66"></iframe><br>原iframe代码如下</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">frameborder</span>=<span class="string">"0"</span> <span class="attr">border</span>=<span class="string">"0"</span> <span class="attr">marginwidth</span>=<span class="string">"0"</span> <span class="attr">marginheight</span>=<span class="string">"0"</span> <span class="attr">width</span>=<span class="string">"330"</span> <span class="attr">height</span>=<span class="string">"86"</span> <span class="attr">src</span>=<span class="string">"//music.163.com/outchain/player?type=2&amp;id=468517654&amp;auto=0&amp;height=66"</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></div></pre></td></tr></table></figure>
 <p>不考虑兼容性的话建议改成</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">embed</span> <span class="attr">src</span>=<span class="string">"//music.163.com/outchain/player?type=2&amp;id=468517654&amp;auto=0&amp;height=66"</span> <span class="attr">width</span>=<span class="string">"330"</span> <span class="attr">height</span>=<span class="string">"86"</span>&gt;</span><span class="tag">&lt;/<span class="name">embed</span>&gt;</span></div></pre></td></tr></table></figure>

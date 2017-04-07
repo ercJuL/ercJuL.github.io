@@ -276,6 +276,12 @@ h6 {
 p {
   margin: 0 0 25px 0;
 }
+iframe {
+  max-width: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -115px;
+}
 a {
   color: #555;
   text-decoration: none;
@@ -1691,7 +1697,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffffb1;
+  background: #dbff47;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2537,4 +2543,13 @@ embed {
 }
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
+}
+.wangyi {
+  width: auto !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  position: absolute !important;
+  top: 0px !important;
+  left: 50% !important;
+  margin-left: -115px !important;
 }
