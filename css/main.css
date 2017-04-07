@@ -1697,7 +1697,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #dbff47;
+  background: #497c53;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2544,12 +2544,15 @@ embed {
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
 }
+div.fluid-vids {
+  position: relative !important;
+  padding-top: 86px !important;
+}
 .wangyi {
   width: auto !important;
-  max-width: 100% !important;
-  max-height: 100% !important;
+  height: auto !important;
   position: absolute !important;
   top: 0px !important;
   left: 50% !important;
-  margin-left: -115px !important;
+  margin-left: -165px !important;
 }
