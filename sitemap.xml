@@ -2,23 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://ercJuL.github.io/about/index.html</loc>
+    <loc>http://ercJuL.github.io/2017/04/12/hexo%E5%BB%BA%E7%AB%99-%E5%87%86%E5%A4%87/</loc>
     
-    <lastmod>2017-04-08T13:48:31.909Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ercJuL.github.io/categories/index.html</loc>
-    
-    <lastmod>2017-04-08T13:24:46.244Z</lastmod>
+    <lastmod>2017-04-12T05:55:01.719Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://ercJuL.github.io/tags/index.html</loc>
     
-    <lastmod>2017-04-08T13:21:29.934Z</lastmod>
+    <lastmod>2017-04-09T07:52:00.986Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ercJuL.github.io/categories/index.html</loc>
+    
+    <lastmod>2017-04-09T07:51:47.479Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ercJuL.github.io/about/index.html</loc>
+    
+    <lastmod>2017-04-08T13:48:31.909Z</lastmod>
     
   </url>
   
